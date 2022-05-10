@@ -4,10 +4,11 @@ function Countrys(props) {
 <>
 
  <p>{props.name} </p>
- <img src={props.image} alt={props.alt} />
+ /// <img src={props.image} alt={props.alt} />
 </>
 
     )
+
 }
 
 export default Countrys;
