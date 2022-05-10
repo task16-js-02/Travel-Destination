@@ -1,10 +1,4 @@
-
-
-
-function Header(props){
-    return(
-<h1>Here were we start</h1>
-    )
-
+function Header(props) {
+  return <h1>we are in header</h1>;
 }
 export default Header;
