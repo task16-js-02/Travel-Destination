@@ -4,11 +4,14 @@ function Tours(props) {
 
 <>
 
+<img src={props.images1} alt={props.alt} />
  <p>{props.name} </p>
 
- <img src={props.image} alt={props.alt} />
- <p>========================================</p>
+
+ 
+ <p>====================</p>
 </>
+
 
     )
 

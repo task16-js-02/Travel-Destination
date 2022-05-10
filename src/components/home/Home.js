@@ -8,7 +8,7 @@ import tourData from "/home/murad/Travel-des/traveldest/src/data/db.json";
 function Home(props) {
   return (
     <>
-      <h1>Here were we start againe</h1>
+      <h1></h1>
       <Header />
 {
  tourData.map(tou=>{

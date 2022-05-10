@@ -3,11 +3,25 @@ import './App.css';
 import Home from './components/home/Home.js';
 import Countrys from './components/tours/Tours.js';
 
-//const data = require("")
+const countryData = require("./data/db.json");
 
 function App() {
   return (
-  <>
+  <> 
+
+  {
+    countryData.map(country => {
+      return (
+        <Countrys  name={country.name} images1={country.image}/>
+
+      )
+
+
+      
+    }) 
+  }
+
+
 <Home/>
 
   </>
@@ -15,4 +29,3 @@ function App() {
 }
 
 export default App;
-<Countrys img="" alt="" title="" />
