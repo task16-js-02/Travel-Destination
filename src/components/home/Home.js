@@ -2,7 +2,7 @@
 import Tours from "../tours/Tours.js";
 import Header from "../header/Header.js";
 import Footer from "../footer/Footer.js";
-import tourData from "/home/murad/Travel-des/traveldest/src/data/db.json";
+import tourData from "../../data/db.json";
 // const tourData = require("./data/db.json");
 
 function Home(props) {
@@ -11,9 +11,9 @@ function Home(props) {
       <h1>Here were we start againe</h1>
       <Header />
 {
- tourData.map(tou=>{
+ tourData.map(tour=>{
      return (
-         <Tours name={tou.name}  image={tou.image}/>
+         <Tours name={tour.name}  image={tour.image}/>
      )
  })
 }
