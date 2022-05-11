@@ -1,20 +1,13 @@
-
-function Tours(props) {
-    return (
-
-<>
-
-<img src={props.images1} alt={props.alt} />
- <p>{props.name} </p>
+function Countrys(props) {
+  return (
+    <div>
+      <img src={props.images1} alt={props.alt} />
+      <p>{props.name} </p>
 
 
- 
- <p>====================</p>
-</>
-
-
-    )
-
+      <p>====================</p>
+    </div>
+  );
 }
 
-export default Tours;
+export default Countrys;
