@@ -8,13 +8,9 @@ import { Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
     <>
-      {/* <Home /> */}
+      <Home />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="header" element={<Header />} />
-        <Route path="city/:id" element={<Header />} />
-      </Routes>
+      
     </>
   );
 }
