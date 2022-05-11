@@ -7,11 +7,11 @@ function Home(props) {
   return (
     <>
       <h1></h1>
-
-      {countryData.map((country) => {
-        return <Countrys name={country.name} images1={country.image} />;
-      })}
       <Header />
+      {countryData.map((country) => {
+        return <Countrys name={country.name} images={country.image} alt={country.id} />;
+      })}
+      
       <Footer />
     </>
   );
