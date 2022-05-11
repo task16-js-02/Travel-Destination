@@ -1,16 +1,13 @@
 function Countrys(props) {
-    return (
+  return (
+    <div>
+      <img src={props.images1} alt={props.alt} />
+      <p>{props.name} </p>
 
-<div>
 
-<img src={props.images1} alt={props.alt} />
- <p>{props.name} </p>
- 
- <p>====================</p>
-</div>
-
-    )
-
+      <p>====================</p>
+    </div>
+  );
 }
 
 export default Countrys;
