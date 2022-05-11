@@ -6,6 +6,7 @@ const countryData = require("../../data/db.json");
 
 function Home(props) {
   return (
+
     <div>
      
       <Header/>
@@ -14,6 +15,7 @@ function Home(props) {
       })} */}
 
       <Tour tour={Countrys} /> 
+
       <Footer />
     </div>
   );

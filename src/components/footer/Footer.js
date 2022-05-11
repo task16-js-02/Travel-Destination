@@ -3,7 +3,7 @@
 function Footer(){
     return(
         <>
-<h1> </h1>
+<h1> we are in footer</h1>
 <h2>&copy;The copyright for Murad and Ahmad &copy;</h2>
 <a href="https://ar-ar.facebook.com/"> Facebook</a>
 <a href="https://twitter.com/"> Twitter</a>
