@@ -3,7 +3,7 @@ const countryData = require("../../../data/db.json");
 
 function Tour(props) {
     return (
-      <>
+      <div>
         <h1></h1>
        
         {countryData.map((country) => {
@@ -11,7 +11,7 @@ function Tour(props) {
         })}
         
         
-      </>
+      </div>
     );
   }
   export default Tour;
