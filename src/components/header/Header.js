@@ -1,4 +1,7 @@
+
+
 function Header(props) {
-  return <h1>we are in header</h1>;
-}
-export default Header;
+
+    return (<h1>we are in Header</h1>)
+  }
+  export default Header;
