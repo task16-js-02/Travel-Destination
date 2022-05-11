@@ -11,6 +11,7 @@ function Home(props) {
 
     <div>
      
+     
       <Header/>
       {countryData.map((country) => {
         return <Countrys key = {country.id}name={country.name}   images={country.image}  alt={country.id}    />;
