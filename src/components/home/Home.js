@@ -1,19 +1,24 @@
-import Header from "../header/Header.js";
+import Header from "../header/Header";
 import Footer from "../footer/Footer.js";
 import Countrys from "../tours/Tours.js";
+import Tour from "../tours/tour/Tour.js";
 const countryData = require("../../data/db.json");
 
 function Home(props) {
   return (
     <>
-      <h1></h1>
-      <Header />
-      {countryData.map((country) => {
+     
+      <Header/>
+      {/* {countryData.map((country) => {
         return <Countrys name={country.name} images={country.image} alt={country.id} />;
-      })}
-      
+      })} */}
+
+      <Tour tour={Countrys} /> 
       <Footer />
     </>
   );
 }
 export default Home;
+
+
+
