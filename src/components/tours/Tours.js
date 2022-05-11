@@ -1,7 +1,7 @@
 function Countrys(props) {
   return (
     <div>
-      <img src={props.images1} alt={props.alt} />
+      <img src={props.images} alt={props.alt} />
       <p>{props.name} </p>
 
 
