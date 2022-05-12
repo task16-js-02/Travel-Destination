@@ -1,18 +1,14 @@
-import Countrys from "../../tours/Tours.js";
 const countryData = require("../../../data/db.json");
 
-function Tour(props) {
-    return (
-      <div>
-        <h1></h1>
-       
-        {countryData.map((country) => {
-        return <Countrys key = {country.id}name={country.name}   images={country.image}  alt={country.id}    />;
 
-      })}
-        
-        
-      </div>
-    );
-  }
-  export default Tour;
+function Tour(props) {
+  return (
+    <div>
+      <h1></h1>
+
+      <img src={props.dataWithKey.image} alt="Hi" />
+      <p> {props.dataWithKey.name} </p>
+    </div>
+  );
+}
+export default Tour;
