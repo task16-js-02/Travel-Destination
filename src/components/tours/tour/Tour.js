@@ -7,8 +7,9 @@ function Tour(props) {
         <h1></h1>
        
         {countryData.map((country) => {
-          return <Countrys name={country.name} images={country.image} alt={country.id} />;
-        })}
+        return <Countrys key = {country.id}name={country.name}   images={country.image}  alt={country.id}    />;
+
+      })}
         
         
       </div>

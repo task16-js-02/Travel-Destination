@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 
-function NavBar() {
+export default function NavBar(props) {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/city/:id" element={<Header />} />
-      </Routes>
-
-     
+      <nav>
+        <Link to="/">Home</Link>
+        
+      </nav>
     </>
   );
 }
 
-export default NavBar;
+
