@@ -1,27 +1,35 @@
-import { Link } from "react-router-dom";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 
+export default function TourDetails(props){
 
- export default function TourDetails() {
- return (
+    const [isShown,setShown] = useState(false);
 
-     <>
-     <h1> in city details </h1>
-    
-    <Link to="/">Home</Link>
-   </>
- );
- }
-// import {useParams} from "react-router-dom"
-// export default function App() {
-//   return (
-//     <BrowserRouter>
-//       <Route  path="/city/:id">
-//           <city> </city>
-//        </Route>
-//     </BrowserRouter>
-//   );
-// }
-// function city(props) {
-//   let {id} = useParams()
-//   return <h2>ID is {id}</h2>;
-// }
+    function clickhandle(){
+        setShown(!isShown);
+    }
+
+    let { id } = useParams();
+    let infoData = props.data.filter(element=> element.id === id) ;
+
+    return (
+        <>
+            <Header />
+            <div className='tourDetailsCards'>            
+            <h2 id='name'> {infoData[0].name} </h2> 
+
+             <p  >
+             {isShown ? infoData[0].info : `${infoData[0].info.substring(0, 250)}`}
+             {isShown? <button onClick={clickhandle}>see less</button>:<button onClick={clickhandle}>see more</button> } 
+             </p>
+             
+   
+            <img  src={infoData[0].image} />
+            </div>
+
+            <Footer/>
+        </>
+    )
+}
