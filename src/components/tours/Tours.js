@@ -7,7 +7,7 @@ function Countrys(props) {
       {/* <img src={props.images} alt={props.alt} />
       <p>{props.name} </p> */}
 
-      <Link to="/city/:id"> <img src={props.images} alt={props.alt} /></Link>
+      <Link to={`/city/${props.id}`}> <img src={props.images} alt={props.alt} /></Link>
       <p> {props.name} </p>
 
 

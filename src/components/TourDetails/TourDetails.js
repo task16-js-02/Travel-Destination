@@ -17,8 +17,8 @@ export default function TourDetails(props){
     return (
         <>
             <Header />
-            <div className='tourDetailsCards'>            
-            <h2 id='name'> {infoData[0].name} </h2> 
+            <div >            
+            <h2 > {infoData[0].name} </h2> 
 
              <p  >
              {isShown ? infoData[0].info : `${infoData[0].info.substring(0, 250)}`}
