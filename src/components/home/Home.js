@@ -1,8 +1,8 @@
 import Header from "../header/Header";
 import Footer from "../footer/Footer.js";
-import Countrys from "../tours/Tours.js";
-import Tour from "../tours/tour/Tour.js";
-const countryData = require("../../data/db.json");
+//import Countrys from "../tours/Tours.js";
+import Tours from "../tours/Tours.js";
+//const countryData = require("../../data/db.json");
 
 
 
@@ -13,7 +13,7 @@ function Home(props) {
      
      
       <Header/>
-      <Tour tour={Countrys} />
+      <Tours Data={props.data} />
 
    
       <Footer />
@@ -21,5 +21,6 @@ function Home(props) {
   );
 }
 export default Home;
+
 
 

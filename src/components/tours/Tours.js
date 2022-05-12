@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
+import Tour from "../tours/tour/Tour.js";
+const countryData = require("../../data/db.json");
 
-
-function Countrys(props) {
+function Tours(props) {
   return (
     <div>
-      {/* <img src={props.images} alt={props.alt} />
-      <p>{props.name} </p> */}
-
-      <Link to={`/city/${props.id}`}> <img src={props.images} alt={props.alt} /></Link>
-      <p> {props.name} </p>
-
-
-      <p>====================</p>
+      {props.Data.map((data) => {
+        return (
+          <Link to={`/city/${data.id}`}>
+            <Tour dataWithKey={data} />
+          </Link>
+        );
+      })}
     </div>
   );
 }
 
-export default Countrys;
+export default Tours;
