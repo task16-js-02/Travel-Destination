@@ -1,17 +1,22 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Home from "./components/home/Home";
-import Header from "./components/header/Header";
+import TourDetails from "../src/components/TourDetails/TourDetails";
 import { Routes, Route, Link } from "react-router-dom";
 
 
 function App() {
   return (
     <>
-      <Home />
-
-      
+      {/* <Home /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/city/:id" element={<TourDetails />} />
+        {/* <city> </city> */}
+      </Routes>
     </>
+      
+   
   );
 }
 
